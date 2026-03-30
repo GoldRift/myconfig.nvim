@@ -173,6 +173,7 @@ return {
     -- - sd'   - [S]urround [D]elete [']quotes
     -- - sr)'  - [S]urround [R]eplace [)] [']
     'nvim-mini/mini.surround',
+    event = { 'BufReadPost', 'BufNewFile' },
     opts = {},
   },
 
@@ -190,6 +191,7 @@ return {
     --  - yinq - [Y]ank [I]nside [N]ext [Q]uote
     --  - ci'  - [C]hange [I]nside [']quote
     'nvim-mini/mini.ai',
+    event = { 'BufReadPost', 'BufNewFile' },
     opts = { n_lines = 500 },
   },
 }
